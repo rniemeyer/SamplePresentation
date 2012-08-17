@@ -1,7 +1,7 @@
 SamplePresentation
 ==================
 
-Reference sample for a presentation tool that can show live coded Knockout samples.
+Reference sample for a presentation tool that can show live coded Knockout samples.  Live here: <http://rniemeyer.github.com/SamplePresentation/>
 
 This is a heavily stripped down version of the Knockout app that I created for [this presentation](http://www.knockmeout.net/2012/08/thatconference-2012-session.html). This is not intended to be a library to create presentations.  It is just a sample that you could modify to suit your purposes.
 
