@@ -158,9 +158,10 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
         //retrieve the code from the server
         this.getCode = function() {
             var current = self.currentState(),
-                key = "../samples/" + self.key + "/" + current.key;
+                path = "../",
+                key = "samples/" + self.key + "/" + current.key;
 
-            require(["text!" + key + ".html", (current.loadAsSection ? "" : "text!") + key + ".js"], function(html, js) {
+            require(["text!" + path + key + ".html", (current.loadAsSection ? "" : "text!" + path) + key + ".js"], function(html, js) {
                 current.html = html;
                 current.js = (js || "").toString();
 
