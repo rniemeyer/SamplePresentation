@@ -3,7 +3,7 @@ require.config({
         "knockout": "ext/knockout-2.1.0",
         "jquery": "ext/jquery-1.7.2.min",
         "text": "ext/text",
-        "codemirror": "ext/CodeMirror",
+        "codemirror": "ext/codemirror",
         "bootstrap": "ext/bootstrap.min"
     },
     shim: {
