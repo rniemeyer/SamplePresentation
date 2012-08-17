@@ -1,0 +1,185 @@
+body
+{
+    background: #EEE;
+}
+
+h2
+{
+    font-size: 48px;
+    color: #EF652A;
+    margin-bottom: 25px;
+    text-shadow: black 1px 1px 2px;
+}
+
+.center
+{
+    text-align: center;
+}
+
+h2.center
+{
+    font-size: 68px;
+    line-height: 88px;
+    margin-top: 250px;
+}
+
+#content
+{
+    margin-top: 30px;
+}
+
+#map 
+{
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+}
+
+#map a
+{
+    color: #CCC;
+}
+
+#map a.selected
+{
+    color: #999;
+    font-size: 1.2em;
+}
+
+#map hr
+{
+    margin: 0px;
+}
+
+.CodeMirror
+{
+    margin: 5px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .3);
+    border-radius: 7px;
+    max-height: 550px;
+}
+
+.cm-s-rubyblue
+{
+    font-size: 1.7em;
+}
+
+.cm-s-rubyblue span.cm-keyword 
+{
+    color: plum;
+}
+
+.CodeMirror .currentline
+{
+    background-color: #1F4661;
+}
+
+.CodeMirror-scroll
+{
+    border-radius: 7px;
+    max-height: 550px;
+    height: auto;
+    overflow: scroll;
+}
+
+.sample
+{
+    margin: 5px;
+    font-size: 1.5em;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .2);
+}
+
+.sample-head
+{
+    color: #888;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.sample-head .description
+{
+    color: #EF652A;
+    font-size: 36px;
+}
+
+.sample input
+{
+    font-size: 18px;
+    width: 225px;
+}
+
+.sample input[type="checkbox"] 
+{
+    width: 50px;
+}
+
+.sample select
+{
+    width: 125px;
+}
+
+.sample div
+{
+    margin-top: 10px;
+}
+
+.points
+{
+    padding: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.points li
+{
+    font-size: 32px;
+    padding: 20px;
+}
+
+.points a 
+{
+    font-size: .8em;
+}
+
+div.center
+{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.modal-body
+{
+    font-size: 4.0em;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.offscreen
+{
+    position: absolute;
+    left: 5000px;
+}
+
+.hide
+{
+    display: none;
+}
+
+.help
+{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: .8em;
+    color: #666;
+}

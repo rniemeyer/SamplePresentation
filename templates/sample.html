@@ -1,0 +1,31 @@
+<div data-bind="keys: { key191: updateCode }, modifier: 'altKey'">
+    <div class="row">
+        <div class="span12">
+            <h3 class="sample-head">
+                <span data-bind="text: title"></span>:
+                <span class="description" data-bind="fadeText: currentState().description"></span>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row" data-bind="ifnot: currentState().sectionData">
+        <div data-bind="css: { span9: currentState().showResult, span12: !currentState().showResult }">
+            <div data-bind="visible: currentState().showHtml">
+                <h3>HTML</h3>
+                <div data-bind="htmlEditor: html"></div>
+            </div>
+            <div data-bind="visible: currentState().showJs">
+                <h3>JavaScript</h3>
+                <div data-bind="jsEditor: js"></div>
+            </div>
+        </div>
+
+        <div class="span3" data-bind="visible: currentState().showResult">
+            <h3 data-bind="attr: { title: error }">Result</h3>
+            <div class="sample" data-bind="sample: $data"></div>
+        </div>
+    </div>
+
+    <div class="row" data-bind="template: { name: key + '-' + currentState().key, if: currentState().sectionData, data: currentState().sectionData }">
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Knockout.js</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="css/rubyblue.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+
+<body data-bind="keys: { key37: goPrevious, key39: goNext, key38: stepPrevious, key40: stepNext }, modifier: 'altKey'">
+    <div class="container">
+        <div id="content" data-bind="with: currentSection">
+            <!-- ko if: style -->
+            <link rel="stylesheet" type="text/css" data-bind="attr: { href: 'css/' + style + '.css' }" />
+            <!-- /ko -->
+            <div data-bind="template: { name: template, 'if': data, data: data }"></div>
+        </div>
+        <div id="map">
+            <hr/>
+            <div data-bind="foreach: sections">
+                <a href="#" data-bind="text: name, click: $root.index.bind(null, $index()), css: { selected: $index() === $root.index() }"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="help">
+        <h4>Delete me from index.html</h4>
+        <div>Alt+Left / Alt+Right - move between sections</div>
+        <div>Alt+Up / Alt+Down - move within a section</div>
+        <div>Alt+? - in code editor to pull correct code</div>
+    </div>
+
+    <div class="modal hide" id="alert">
+        <div class="modal-body">
+        </div>
+    </div>
+
+    <input data-bind="focusBody: true" class="offscreen" />
+
+    <script data-main="js/main" src="js/ext/require.js"></script>
+</body>
+</html>
