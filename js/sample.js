@@ -159,7 +159,7 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
         this.getCode = function() {
             var current = self.currentState(),
                 key = "../samples/" + self.key + "/" + current.key;
-console.log("getCode", key);
+
             require(["text!" + key + ".html", (current.loadAsSection ? "" : "text!") + key + ".js"], function(html, js) {
                 current.html = html;
                 current.js = (js || "").toString();
