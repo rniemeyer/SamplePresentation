@@ -19,3 +19,5 @@ Some notes on the structure:
 * look at *js/modules/one.js* and *js/modules/two.js* for how to specify the code samples, their states, and the various options that you can pass to them.
 * the code samples are intended to be flexible. You can choose to have the code load automatically for you with each state or you can move to the next state and type in the code yourself (with the option of using Alt+? in the editor to pull it in at anytime).
 
+License
+MIT http://www.opensource.org/licenses/mit-license.php
