@@ -1,0 +1,25 @@
+<h2>
+    <span data-bind="text: title"></span>
+    <span data-bind="with: activeType">: <span data-bind="fadeText: title"></span></span>
+</h2>
+
+<div class="row">
+    <div class="span2">
+        <ul class="nav nav-list" data-bind="foreach: allTypes">
+            <li class="nav-header" data-bind="text: title"></li>
+            <!-- ko foreach: bindings -->
+            <li data-bind="css: { active: title === $parents[1].activeBindingName() }">
+                <a href="#" data-bind="text: title, click: $parents[1].selectBinding"></a>
+            </li>
+            <!-- /ko -->
+        </ul>
+    </div>
+    <div class="offset1 span9">
+        <div data-bind="with: activeBinding">
+            <div class="binding" data-bind="text: title"></div>
+            <div class="medium" data-bind="htmlEditor: sample">
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,12 +1,12 @@
 body
 {
-    background: #EEE;
+    background: #FFF;
 }
 
 h2
 {
     font-size: 48px;
-    color: #EF652A;
+    color: #993333;
     margin-bottom: 25px;
     text-shadow: black 1px 1px 2px;
 }
@@ -20,15 +20,44 @@ h2.center
 {
     font-size: 68px;
     line-height: 88px;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 #content
 {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
-#map 
+.title
+{
+    margin-bottom: 75px;
+    margin-top: 300px;
+}
+
+.title h2
+{
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+}
+
+.title h4
+{
+    font-size: 28px;
+    text-align: center;
+}
+
+h4.name {
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+.title h4 .date
+{
+    margin-right: 50px;
+}
+
+#map
 {
     width: 90%;
     position: absolute;
@@ -60,14 +89,19 @@ h2.center
     max-height: 550px;
 }
 
-.cm-s-rubyblue
+.cm-s-rubyblue, .cm-s-rubyblue-light
 {
     font-size: 1.7em;
+    /* font-family: 'Source Code Pro', sans-serif; */
 }
 
-.cm-s-rubyblue span.cm-keyword 
+.cm-s-rubyblue span.cm-keyword
 {
     color: plum;
+}
+
+.cm-s-rubyblue span.cm-string {
+    color: #FA5858;
 }
 
 .CodeMirror .currentline
@@ -87,10 +121,10 @@ h2.center
 {
     margin: 5px;
     font-size: 1.5em;
-    background-color: #FFF;
+    background-color: #DDD;
     border-radius: 5px;
     padding: 5px;
-    height: 400px;
+    height: 500px;
     width: 300px;
     box-shadow: 4px 4px 2px rgba(0, 0, 0, .2);
 }
@@ -104,7 +138,7 @@ h2.center
 
 .sample-head .description
 {
-    color: #EF652A;
+    color: #DF0101;
     font-size: 36px;
 }
 
@@ -114,7 +148,7 @@ h2.center
     width: 225px;
 }
 
-.sample input[type="checkbox"] 
+.sample input[type="checkbox"]
 {
     width: 50px;
 }
@@ -127,6 +161,20 @@ h2.center
 .sample div
 {
     margin-top: 10px;
+}
+
+.sample pre {
+    font-size: 14px;
+}
+
+.sample li {
+    margin-bottom: 10px;
+}
+
+.error
+{
+    margin-top: 10px;
+    color: #ff0000;
 }
 
 .points
@@ -142,7 +190,7 @@ h2.center
     padding: 20px;
 }
 
-.points a 
+.points a
 {
     font-size: .8em;
 }
@@ -155,6 +203,11 @@ div.center
     height: 100%;
     width: 100%;
     display: table;
+}
+
+.modal
+{
+    width: 750px;
 }
 
 .modal-body
@@ -182,4 +235,193 @@ div.center
     right: 50px;
     font-size: .8em;
     color: #666;
+}
+
+.marker
+{
+    position: absolute;
+    font-size: 32px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #993333;
+    padding: 15px;
+    margin: 6px;
+}
+
+.marker span
+{
+    color: #fff;
+}
+
+.marker.about, .marker.custom
+{
+    box-shadow: 1px 1px 1px #333;
+    background-color: #993333;
+}
+
+.mvvm
+{
+    position: absolute;
+    top: 20%;
+    height: 300px;
+    width: 300px;
+    color: #fff;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000;
+    font-size: 54px;
+    text-align: center;
+}
+
+.mvvm p
+{
+    position: relative;
+    top: 45%;
+}
+
+.mvvm.model
+{
+    left: 25px;
+}
+
+.mvvm.view
+{
+    left: 350px;
+}
+
+.mvvm.viewmodel
+{
+    left: 675px;
+}
+
+.mvvm.viewleft
+{
+    left: 200px;
+}
+
+.mvvm.bindings
+{
+    left: 525px;
+}
+
+.mvvm.viewmodelright
+{
+    left: 850px;
+}
+
+.orange
+{
+    color: #AA5E5E;
+}
+
+.logo
+{
+    float: right;
+    width: 15%;
+    height: 15%;
+    margin-top: -20px;
+}
+
+.tccc
+{
+    float: left;
+    font-size: 28px;
+    color: maroon;
+    margin-left: -80px;
+}
+
+.centered
+{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.twitter
+{
+    font-size: 26px;
+}
+
+.twitter i
+{
+    color: #4099FF;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+.links
+{
+    font-size: 2em;
+}
+
+li.team
+{
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.large
+{
+    font-size: 1.5em;
+}
+
+.medium
+{
+    font-size: 1.3em;
+}
+
+.types
+{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.fn
+{
+    width: 700px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.shrink .CodeMirror
+{
+    max-height: 100px;
+}
+
+.points .bigger
+{
+    margin-bottom: 25px;
+    font-size: 3em;
+}
+
+.binding
+{
+    text-align: center;
+    width: 350px;
+    font-size: 48px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 50px 0px 50px 0px;
+    box-shadow: 1px 1px 1px #333;
+    background-color: #993333;
+}
+
+.binding span
+{
+    color: #fff;
+}
+
+.nav-list
+{
+    font-size: 1.2em;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover
+{
+    background-color: #993333;
 }

@@ -2,6 +2,7 @@ require.config({
     paths: {
         "knockout": "ext/knockout-2.1.0",
         "jquery": "ext/jquery-1.7.2.min",
+        "jsplumb": "ext/jquery.jsPlumb-1.3.10-all-min",
         "text": "ext/text",
         "codemirror": "ext/codemirror",
         "bootstrap": "ext/bootstrap.min"
@@ -11,7 +12,7 @@ require.config({
     }
 });
 
-require(["knockout", "app", "jquery", "bootstrap", "utilities", "stringTemplateEngine", "text", "codemirror"], function(ko, App, $) {
+require(["knockout", "app", "jquery", "bootstrap", "utilities", "stringTemplateEngine", "text", "codemirror", "jsplumb"], function(ko, App, $) {
     var vm = new App();
 
     //simple client-side routing - update hash when current section is changed

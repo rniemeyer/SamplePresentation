@@ -1,0 +1,19 @@
+<h2 data-bind="text: subtitle"></h2>
+
+<ul class="points types" data-bind="foreach: points">
+    <li class="bigger">
+        <span data-bind="text: name"></span>
+        <a data-bind="text: url, attr: { href: url }"></a>
+    </li>
+</ul>
+
+<div data-bind="visible: showThanks">
+    <h2 data-bind="text: title"></h2>
+    <h4 class="name">
+        <span data-bind="text: speaker"></span>
+    <span class="twitter">
+        <i class="icon-twitter"></i>
+        <span data-bind="text: twitter"></span>
+    </span>
+    </h4>
+</div>

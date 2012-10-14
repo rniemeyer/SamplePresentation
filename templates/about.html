@@ -1,0 +1,48 @@
+<h2 data-bind="text: title"></h2>
+
+<div class="points" data-bind="foreach: points">
+    <div data-bind="template: { name: template, data: $data.data || $root }"></div>
+</div>
+
+<script id="marker" type="text/html">
+    <div data-bind="css: { hide: $parents[1].hideMarkers }">
+        <div class="marker about" data-bind="fadeText: title, style: { left: x * 200 + 'px', top: y * 200 + 'px', '-webkit-transform': 'rotate(' + rotate + 'deg)' }">
+        </div>
+</script>
+
+<script id="model" type="text/html">
+    <div class="mvvm model" data-bind="css: { hide: $parents[1].hideBoxes }">
+        <p><span class="orange">M</span>odel</p>
+    </div>
+</script>
+
+<script id="view" type="text/html">
+    <div class="mvvm view" data-bind="css: { hide: $parents[1].hideBoxes }">
+        <p><span class="orange">V</span>iew</p>
+    </div>
+</script>
+
+<script id="viewmodel" type="text/html">
+    <div class="mvvm viewmodel" data-bind="css: { hide: $parents[1].hideBoxes }">
+        <p><span class="orange">V</span>iew<span class="orange">M</span>odel</p>
+    </div>
+</script>
+
+<script id="points" type="text/html">
+    <div class="row">
+        <div class="span5">
+            <div class="json large" data-bind="jsonEditor: activePoints.json"></div>
+            <div class="links">
+                <a href="#" data-bind="click: previous">Previous</a>
+                <a href="#" class="pull-right" data-bind="click: next">Next</a>
+            </div>
+        </div>
+        <div class="span5">
+            <ul data-bind="foreach: activePoints">
+                <li class="team" data-bind="text: $data"></li>
+            </ul>
+        </div>
+    </div>
+</script>
+
+

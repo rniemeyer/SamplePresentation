@@ -5,10 +5,12 @@
 
         this.sections = ko.observableArray([
             new Section("intro"),
-            new Section("points"),
-            new Section("one", "sample"),
-            new Section("two", "sample"),
-            new Section("bye")
+            new Section("about"),
+            new Section("basics", "sample"),
+            new Section("arrays", "sample"),
+            new Section("bindings"),
+            new Section("extensibility"),
+            new Section("thanks")
         ]);
 
         this.updateSection = function(name) {
