@@ -4,7 +4,7 @@
         var self = this;
 
         this.sections = ko.observableArray([
-            new Section("intro"),
+            new Section("intro",null, { forceLoad: true, displayName: 'Introduction' } ),
             new Section("points"),
             new Section("one", "sample"),
             new Section("two", "sample"),

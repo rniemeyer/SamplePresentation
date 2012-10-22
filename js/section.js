@@ -3,6 +3,7 @@ define(["knockout"], function(ko) {
         var self = this;
         this.name = name;
         this.template = template || name;
+        this.displayName = typeof style === "undefined" ? name : style.displayName || name
         this.data = ko.observable();
         this.style = style;
         this.loaded = false;

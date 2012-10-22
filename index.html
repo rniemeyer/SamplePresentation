@@ -20,7 +20,7 @@
         <div id="map">
             <hr/>
             <div data-bind="foreach: sections">
-                <a href="#" data-bind="text: name, click: $root.index.bind(null, $index()), css: { selected: $index() === $root.index() }"></a>
+                <a href="#" data-bind="text: displayName, click: $root.index.bind(null, $index()), css: { selected: $index() === $root.index() }"></a>
             </div>
         </div>
     </div>
