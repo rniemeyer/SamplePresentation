@@ -1,5 +1,5 @@
 define(["knockout"], function(ko) {
-    //define a template source that simply treats the template name as its content
+    //define a template source that tries to key into an object first to find a template string
     var templates = {},
         data = {},
         engine = new ko.nativeTemplateEngine();
