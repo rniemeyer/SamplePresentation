@@ -5,12 +5,17 @@
 
         this.sections = ko.observableArray([
             new Section("intro"),
-            new Section("libraries"),
-            new Section("ko", "sample"),
-            new Section("bb", "sample"),
+            new Section("me"),
+            new Section("what"),
+            new Section("why"),
+            new Section("ko"),
+            new Section("backbone"),
+            new Section("ko-basics", "sample"),
+            new Section("backbone-basics", "sample"),
             new Section("example", "sample"),
             new Section("comparison"),
             new Section("together", "sample"),
+            new Section("summary"),
             new Section("end")
         ]);
 

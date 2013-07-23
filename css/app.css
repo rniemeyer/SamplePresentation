@@ -1,12 +1,12 @@
 body
 {
-    background: #EEE;
+    background: #FCF9F1;
 }
 
 h2
 {
     font-size: 48px;
-    color: #EF652A;
+    color: #0431B4;
     margin-bottom: 25px;
     text-shadow: black 1px 1px 2px;
 }
@@ -18,7 +18,7 @@ h2
 
 h2.center
 {
-    font-size: 68px;
+    font-size: 62px;
     line-height: 88px;
     margin-top: 250px;
 }
@@ -72,7 +72,7 @@ h2.center
 
 .CodeMirror .currentline
 {
-    background-color: #fff;
+    background-color: #F5F1E2;
 }
 
 .CodeMirror-scroll
@@ -87,7 +87,8 @@ h2.center
 {
     margin: 5px;
     font-size: 1.5em;
-    background-color: #FFF;
+    background-color: #8F835B;
+    color: #fff;
     border-radius: 5px;
     padding: 5px;
     height: 400px;
@@ -104,7 +105,7 @@ h2.center
 
 .sample-head .description
 {
-    color: #EF652A;
+    color: #0431B4;
     font-size: 36px;
 }
 

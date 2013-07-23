@@ -1,7 +1,7 @@
 define(function() {
     return {
-        title: "This is my presentation",
-        speaker: "My Name",
-        twitter: "@myTwitterHandle"
+        title: "Thank-you!",
+        speaker: "Ryan Niemeyer",
+        twitter: "@RPNiemeyer"
     };
 });

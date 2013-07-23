@@ -1,6 +1,6 @@
 define(["knockout", "sample"], function(ko, Sample) {
 
-    return  new Sample("Example", "example", [
+    return  new Sample("Backbone Basics", "backbone-basics", [
         new Sample.State("Sample code","code"),
         new Sample.State("Build on code (Alt+? in editor to pull code)","more"),
         new Sample.State("Force update", "force", { forceLoad: true }),

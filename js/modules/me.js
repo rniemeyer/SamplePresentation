@@ -1,6 +1,6 @@
 define(["knockout"], function(ko) {
     return function() {
-        this.title = "Knockout.js";
+        this.title = "About Me";
         this.allPoints = [
             { title: "Point one"},
             { title: "Point two"},

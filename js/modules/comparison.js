@@ -1,6 +1,6 @@
 define(["knockout"], function(ko) {
     return function() {
-        this.title = "Hit Alt+Down now";
+        this.title = "Backbone vs. Knockout";
         this.allPoints = [
             { title: "Point one"},
             { title: "Point two"},
