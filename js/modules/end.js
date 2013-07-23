@@ -1,6 +1,6 @@
 define(function() {
     return {
-        title: "Thanks!",
+        title: "This is my presentation",
         speaker: "My Name",
         twitter: "@myTwitterHandle"
     };
