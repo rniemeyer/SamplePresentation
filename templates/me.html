@@ -1,6 +1,30 @@
 <h2 data-bind="text: title"></h2>
 
-<ul class="points" data-bind="foreach: points">
-    <li data-bind="fadeText: title">
-    </li>
-</ul>
+<div class="points" data-bind="foreach: points">
+    <div data-bind="template: $data"></div>
+</div>
+
+
+<script id="appendTo" type="text/html">
+    <!-- ko if: $parent.points().length < 3 -->
+    <div class="epic">
+        JavaScipt Engineer for: <img src="img/appendTo-logo.png" />
+    </div>
+    <!-- /ko -->
+</script>
+
+<script id="family" type="text/html">
+    <!-- ko if: $parent.points().length < 3 -->
+    <div class="family">
+        <img src="img/family.jpg" />
+    </div>
+    <!-- /ko -->
+</script>
+
+<script id="office" type="text/html">
+    <!-- ko if: $parent.points().length < 3 -->
+    <div class="family">
+        <img src="img/backbone.png" />
+    </div>
+    <!-- /ko -->
+</script>

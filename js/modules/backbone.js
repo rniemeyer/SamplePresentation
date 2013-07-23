@@ -2,11 +2,12 @@ define(["knockout"], function(ko) {
     return function() {
         this.title = "Backbone.js";
         this.allPoints = [
-            { title: "Point one"},
-            { title: "Point two"},
-            { title: "Point three"},
-            { title: "Point four"},
-            { title: "Alt+Right will move to next section"}
+            { title: "Created by Jeremy Ashkenas and Document Cloud"},
+            { title: "Building blocks to structure a client-side application"},
+            { title: "Model"},
+            { title: "Collections"},
+            { title: "Views"},
+            { title: "Router"}
         ];
 
         this.points = ko.observableArray();

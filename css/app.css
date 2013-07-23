@@ -184,3 +184,39 @@ div.center
     font-size: .8em;
     color: #666;
 }
+
+.logo
+{
+    float: right;
+    width: 15%;
+    height: 15%;
+    margin-top: -20px;
+}
+
+.bb-logo
+{
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.that
+{
+    float: left;
+    width: 9%;
+    height: 9%;
+    margin-left: -120px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 15px;
+}
+
+.family img
+{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 468px;
+    height: 624px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333;
+}

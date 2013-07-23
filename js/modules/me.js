@@ -2,14 +2,11 @@ define(["knockout"], function(ko) {
     return function() {
         this.title = "About Me";
         this.allPoints = [
-            { title: "Point one"},
-            { title: "Point two"},
-            { title: "Point three"},
-            { title: "Point four"},
-            { title: "Alt+Right will move to next section"}
+            "appendTo",
+            "family",
+            "office"
         ];
-
-        this.points = ko.observableArray();
+        this.points = ko.observableArray([]);
 
         //add the top point to the list of displayed points
         this.next = function() {
@@ -18,11 +15,15 @@ define(["knockout"], function(ko) {
             }
         };
 
+        //initialize the first point
+        //this.next();
+
         //step back
         this.previous = function() {
             if (this.points().length) {
                 this.allPoints.unshift(this.points.pop());
             }
         };
+
     };
 });

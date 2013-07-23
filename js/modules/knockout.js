@@ -2,11 +2,11 @@ define(["knockout"], function(ko) {
     return function() {
         this.title = "Knockout.js";
         this.allPoints = [
-            { title: "Point one"},
-            { title: "Point two"},
-            { title: "Point three"},
-            { title: "Point four"},
-            { title: "Alt+Right will move to next section"}
+            { title: "Created by Steve Sanderson in 2010"},
+            { title: "Focuses on data binding"},
+            { title: "Templating"},
+            { title: "Observable structures"},
+            { title: "Dependency tracking"}
         ];
 
         this.points = ko.observableArray();

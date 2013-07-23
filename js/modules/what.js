@@ -2,11 +2,11 @@ define(["knockout"], function(ko) {
     return function() {
         this.title = "What are we talking about?";
         this.allPoints = [
-            { title: "Point one"},
-            { title: "Point two"},
-            { title: "Point three"},
-            { title: "Point four"},
-            { title: "Alt+Right will move to next section"}
+            { title: "Client-side JavaScript libraries"},
+            { title: "\"Single-page applications\" (SPA)"},
+            { title: "MVC/MVVM/MV*"},
+            { title: "Separation of data from DOM elements"},
+            { title: "Communicate with backend via JSON"}
         ];
 
         this.points = ko.observableArray();

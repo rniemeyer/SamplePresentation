@@ -2,11 +2,10 @@ define(["knockout"], function(ko) {
     return function() {
         this.title = "Why focus on these libraries?";
         this.allPoints = [
-            { title: "Point one"},
-            { title: "Point two"},
-            { title: "Point three"},
-            { title: "Point four"},
-            { title: "Alt+Right will move to next section"}
+            { title: "Lightweight"},
+            { title: "Few dependencies"},
+            { title: "Not full frameworks"},
+            { title: "Build it your way"}
         ];
 
         this.points = ko.observableArray();
