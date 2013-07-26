@@ -52,6 +52,10 @@ h2.center
     margin: 0px;
 }
 
+.appendTo {
+    font-size: 3em;
+}
+
 .CodeMirror
 {
     margin: 5px;
@@ -244,12 +248,11 @@ div.center
 .family img
 {
     position: absolute;
-    top: 15%;
-    left: 15%;
-    width: 468px;
-    height: 624px;
+    top: 100%;
+    height: 450px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #333;
+    margin-top: 50px;
 }
 
 .marker
@@ -261,7 +264,7 @@ div.center
     border-radius: 10px;
     box-shadow: 2px 2px 2px #610B0B;
     padding: 15px;
-    margin: 6px;
+    margin: 10px;
 }
 
 .marker span
@@ -301,4 +304,31 @@ div.center
 .marker.description span
 {
     color: #999;
+}
+
+
+.why img {
+    height: 75px;
+}
+
+.why-ko {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+
+.why-bb {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+
+.what-point {
+    position: absolute;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+    font-size: 3.5em;
+    left: 22%;
+    bottom: 35%;
 }

@@ -12,10 +12,7 @@ define(["knockout"], function(ko) {
         this.bbPointsAll = [
             { title: "Created by Jeremy Ashkenas and Document Cloud"},
             { title: "Building blocks to structure a client-side application"},
-            { title: "Model"},
-            { title: "Collections"},
-            { title: "Views"},
-            { title: "Router"}
+            { title: "Minimalistic, low-level"}
         ];
 
         this.koPoints = ko.observableArray();

@@ -3,8 +3,9 @@ define(["knockout"], function(ko) {
         this.title = "About Me";
         this.allPoints = [
             "appendTo",
+            "verona",
             "family",
-            "office"
+            "desk"
         ];
         this.points = ko.observableArray([]);
 

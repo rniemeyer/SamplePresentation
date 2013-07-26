@@ -1,6 +1,15 @@
 <h2 data-bind="text: title"></h2>
 
-<ul class="points" data-bind="foreach: points">
-    <li data-bind="fadeText: title">
-    </li>
-</ul>
+<div class="why" data-bind="visible: showLogos">
+    <div class="why-ko">
+        <img src="img/ko-logo.png" alt="Knockout" />
+    </div>
+    <div class="why-bb">
+        <img src="img/backbone.png" alt="Knockout" />
+    </div>
+</div>
+
+<div data-bind="with: currentPoint">
+    <div class="marker what-point" data-bind="fadeText: title">
+    </div>
+</div>

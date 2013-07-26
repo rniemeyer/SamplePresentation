@@ -4,27 +4,31 @@
     <div data-bind="template: $data"></div>
 </div>
 
-
 <script id="appendTo" type="text/html">
+    <div class="appendTo">
+        <img src="img/appendTo-logo.png" />
+        <span> - JavaScript Engineer</span>
+    </div>
+</script>
+
+<script id="verona" type="text/html">
     <!-- ko if: $parent.points().length < 3 -->
-    <div class="epic">
-        JavaScipt Engineer for: <img src="img/appendTo-logo.png" />
+    <div class="family">
+        <img src="img/verona2.png" />
     </div>
     <!-- /ko -->
 </script>
 
 <script id="family" type="text/html">
-    <!-- ko if: $parent.points().length < 3 -->
+    <!-- ko if: $parent.points().length < 4 -->
     <div class="family">
         <img src="img/family.jpg" />
     </div>
     <!-- /ko -->
 </script>
 
-<script id="office" type="text/html">
-    <!-- ko if: $parent.points().length < 3 -->
+<script id="desk" type="text/html">
     <div class="family">
-        <img src="img/backbone.png" />
+        <img src="img/desk.jpg" />
     </div>
-    <!-- /ko -->
 </script>

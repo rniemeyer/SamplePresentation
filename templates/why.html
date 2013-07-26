@@ -4,6 +4,15 @@
     <div data-bind="template: { name: template, data: $data.data || $root }"></div>
 </div>
 
+<div class="why">
+    <div class="why-ko">
+        <img src="img/ko-logo.png" alt="Knockout" />
+    </div>
+    <div class="why-bb">
+        <img src="img/backbone.png" alt="Knockout" />
+    </div>
+</div>
+
 <script id="marker" type="text/html">
     <div data-bind="css: { hide: $parents[1].hideMarkers }">
         <div class="marker about" data-bind="fadeText: title, style: { left: x * 200 + 'px', top: y * 200 + 'px', '-webkit-transform': 'rotate(' + rotate + 'deg)' }">

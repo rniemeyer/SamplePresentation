@@ -5,8 +5,7 @@ define(["knockout"], function(ko) {
             { title: "Observables"},
             { title: "Computed Observables"},
             { title: "Observable Arrays"},
-            { title: "Bindings"},
-            { title: "(Templating)"}
+            { title: "Bindings"}
         ];
 
         this.bbPointsAll = [
