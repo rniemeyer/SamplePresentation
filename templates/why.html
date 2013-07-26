@@ -1,6 +1,11 @@
 <h2 data-bind="text: title"></h2>
 
-<ul class="points" data-bind="foreach: points">
-    <li data-bind="fadeText: title">
-    </li>
-</ul>
+<div class="points" data-bind="foreach: points">
+    <div data-bind="template: { name: template, data: $data.data || $root }"></div>
+</div>
+
+<script id="marker" type="text/html">
+    <div data-bind="css: { hide: $parents[1].hideMarkers }">
+        <div class="marker about" data-bind="fadeText: title, style: { left: x * 200 + 'px', top: y * 200 + 'px', '-webkit-transform': 'rotate(' + rotate + 'deg)' }">
+        </div>
+</script>

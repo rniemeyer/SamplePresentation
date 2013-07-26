@@ -1,0 +1,25 @@
+<h2 data-bind="text: title"></h2>
+
+<div class="compare compare-left" data-bind="visible: bbPoints().length">
+    <div class="compare-logo">
+        <img src="img/backbone.png" alt="Backbone" />
+    </div>
+    <ul class="points" data-bind="foreach: bbPoints">
+        <li data-bind="fadeText: title">
+        </li>
+    </ul>
+</div>
+
+<div class="compare compare-right" data-bind="css: { dull: bbPoints().length }, visible: koPoints().length">
+    <div class="compare-logo">
+        <img src="img/ko-logo.png" alt="Knockout" />
+    </div>
+    <ul class="points" data-bind="foreach: koPoints">
+        <li data-bind="fadeText: title">
+        </li>
+    </ul>
+</div>
+
+
+
+

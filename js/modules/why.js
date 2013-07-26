@@ -1,14 +1,16 @@
 define(["knockout"], function(ko) {
     return function() {
+        var self = this;
         this.title = "Why focus on these libraries?";
         this.allPoints = [
-            { title: "Lightweight"},
-            { title: "Few dependencies"},
-            { title: "Not full frameworks"},
-            { title: "Build it your way"}
+            { template: "marker", data: { x: 1, y: 0, rotate: -5, title: "Lightweight" } },
+            { template: "marker", data: { x: 4, y: .25, rotate: 5, title: "Few Dependencies" } },
+            { template: "marker", data: { x: 3, y: .75, rotate: 15, title: "Focused / lean" } },
+            { template: "marker", data: { x: 0, y: .75, rotate: -15, title: "Flexible / Build your own framework" } },
+            { template: "marker", data: { x: 1.75, y: 1.50, rotate: 5, title: "Resources / Community Support" } }
         ];
 
-        this.points = ko.observableArray();
+        this.points = ko.observableArray([]);
 
         //add the top point to the list of displayed points
         this.next = function() {
@@ -23,5 +25,6 @@ define(["knockout"], function(ko) {
                 this.allPoints.unshift(this.points.pop());
             }
         };
+
     };
 });

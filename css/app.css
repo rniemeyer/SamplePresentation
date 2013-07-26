@@ -1,6 +1,6 @@
 body
 {
-    background: #FCF9F1;
+    background: #fff;
 }
 
 h2
@@ -87,8 +87,8 @@ h2.center
 {
     margin: 5px;
     font-size: 1.5em;
-    background-color: #8F835B;
-    color: #fff;
+    background-color: #F5F1E2;
+    color: #000;
     border-radius: 5px;
     padding: 5px;
     height: 400px;
@@ -146,6 +146,37 @@ h2.center
 .points a 
 {
     font-size: .8em;
+}
+
+.compare {
+    height: 600px;
+}
+
+.compare h3 {
+    font-size: 2.7em;
+}
+
+.compare .points {
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.compare li {
+    line-height: 32px;
+    padding: 10px;
+}
+
+.compare-left {
+    width: 50%;
+    float: left;
+}
+
+.compare.dull {
+    opacity: 0.6;
+}
+
+.compare-logo img {
+    height: 75px;
 }
 
 div.center
@@ -219,4 +250,55 @@ div.center
     height: 624px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #333;
+}
+
+.marker
+{
+    position: absolute;
+    font-size: 32px;
+    background-color: #B40404;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #610B0B;
+    padding: 15px;
+    margin: 6px;
+}
+
+.marker span
+{
+    color: #fff;
+}
+
+.marker.strike
+{
+    color: #000;
+    text-decoration: line-through;
+}
+
+.marker.active
+{
+    border: solid 5px #610B0B;
+}
+
+.marker.method
+{
+
+}
+
+.marker.description, .marker.question
+{
+    background-color: transparent;
+    box-shadow: 0 0 0 #000;
+    border-radius: 0;
+}
+
+.marker.question span
+{
+    color: #333;
+    font-style: italic;
+}
+
+.marker.description span
+{
+    color: #999;
 }
