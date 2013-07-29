@@ -1,7 +1,7 @@
 define(["knockout"], function(ko) {
     return function() {
         var self = this;
-        this.title = "Why focus on these libraries?";
+        this.title = "Why focus on these two?";
         this.allPoints = [
             { template: "marker", data: { x: 1, y: 0, rotate: -5, title: "Lightweight" } },
             { template: "marker", data: { x: 4, y: 0, rotate: 5, title: "Few Dependencies" } },

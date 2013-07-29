@@ -1,7 +1,6 @@
 var camper = new Camper({ name: "Bob Smith", room: 515 });
 
 var View = Backbone.View.extend({
-    el: "#content",
     events: {
         "keyup #nameEdit": function() {
             this.model.set("name", $("#nameEdit").val());
@@ -19,4 +18,4 @@ var View = Backbone.View.extend({
     }
 });
 
-var view = new View();
+var view = new View({ el: "#content" });

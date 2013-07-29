@@ -158,6 +158,7 @@ h2.center
 
 .compare h3 {
     font-size: 2.7em;
+    margin-top: 15px;
 }
 
 .compare .points {
@@ -181,6 +182,13 @@ h2.center
 
 .compare-logo img {
     height: 75px;
+}
+
+.points.points-small li
+{
+    font-size: 26px;
+    padding: 10px;
+    line-height: 26px;
 }
 
 div.center

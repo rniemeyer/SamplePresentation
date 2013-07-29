@@ -15,7 +15,8 @@
             new Section("bb-basics", "sample"),
             new Section("bb-more"),
             new Section("comparison"),
-            new Section("together", "sample"),
+            new Section("together"),
+            new Section("example", "sample"),
             new Section("summary"),
             new Section("end")
         ]);
