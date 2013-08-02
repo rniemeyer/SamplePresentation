@@ -8,7 +8,7 @@ define(["knockout"], function(ko) {
                 "Narrow focus - data binding",
                 "Easy to get started with",
                 "Dependency tracking - automatic updates",
-                "built-in bindings + custom bindings"
+                "Built-in bindings + custom bindings"
             ],
             activePros: ko.observableArray(),
             cons: [

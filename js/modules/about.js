@@ -2,17 +2,19 @@ define(["knockout"], function(ko) {
     return function() {
         this.title = "Tale of the tape";
         this.koPointsAll = [
-            { title: "Created by Steve Sanderson in 2010"},
-            { title: "Focuses on data binding"},
-            { title: "Templating"},
-            { title: "Observable structures"},
-            { title: "Dependency tracking"}
+            { title: "Created by Steve Sanderson"},
+            { title: "Released in mid 2010"},
+            { title: "Currently at version 2.3.0"},
+            { title: "15kb min+gz. No strict dependencies."},
+            { title: "Focuses on data binding between view and view model"}
         ];
 
         this.bbPointsAll = [
-            { title: "Created by Jeremy Ashkenas and Document Cloud"},
-            { title: "Building blocks to structure a client-side application"},
-            { title: "Minimalistic, low-level"}
+            { title: "Created by Jeremy Ashkenas (DocumentCloud)"},
+            { title: "Released in late 2010"},
+            { title: "Currently at version 1.0.0"},
+            { title: "6.3kb min+gz. Underscore only strict dependency."},
+            { title: "Provides structure and building blocks"}
         ];
 
         this.koPoints = ko.observableArray();

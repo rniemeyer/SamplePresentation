@@ -1,6 +1,7 @@
 body
 {
-    background: #fff;
+    background: #fafafa;
+    zoom: 1;
 }
 
 h2
@@ -172,8 +173,21 @@ h2.center
 }
 
 .compare-left {
-    width: 50%;
-    float: left;
+    position: absolute;
+    width: 45%;
+}
+
+.compare-right {
+    transition: margin-left 1s, opacity 1s
+}
+
+.compare-right-move {
+    margin-left: 50%;
+    opacity: 0.6;
+}
+
+.compare-right.nofade {
+    opacity: 1.0;
 }
 
 .compare.dull {
@@ -314,6 +328,12 @@ div.center
     color: #999;
 }
 
+.marker.what {
+    background-color: #ccc;
+    color: #666;
+    box-shadow: 2px 2px 2px #666;
+}
+
 
 .why img {
     height: 75px;
@@ -331,12 +351,38 @@ div.center
     right: 15%;
 }
 
-.what-point {
+.what-point, .block-point {
     position: absolute;
     padding: 30px;
     text-align: center;
+}
+
+.what-point {
     width: 50%;
     font-size: 3.5em;
     left: 22%;
     bottom: 35%;
+}
+
+.x.what-point:after {
+    position: absolute;
+    content: "XXXXX";
+    color: #000;
+    font-size: 3em;
+    left: 22%;
+}
+
+.block-point {
+    width: 80%;
+    font-size: 2.75em;
+    left: 10%;
+    bottom: 35%;
+}
+
+.block-point-name {
+    font-weight: bold;
+}
+
+.block-point-name:after {
+    content: " - "
 }
