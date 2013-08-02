@@ -1,4 +1,4 @@
-define(["knockout"], function(ko) {
+define(["knockout", "sample"], function(ko) {
     return function(name, template, style) {
         var self = this;
         this.name = name;

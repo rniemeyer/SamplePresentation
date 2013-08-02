@@ -39,6 +39,7 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
 
             ko.applyBindings = realApply;
         },
+        //theme: "rubyblue"
         theme: "eclipse"
     };
 
@@ -79,6 +80,26 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
             },
             disposeWhenNodeIsRemoved: element
         });
+    };
+
+    //load a sample from remote and populate editor
+    ko.bindingHandlers.remoteEditor = {
+        init: function(element, valueAccessor) {
+            var value = ko.observable(),
+                options = valueAccessor(),
+                editor = options.type + "Editor",
+                binding = {};
+
+            if (options.path) {
+                binding[editor] = value;
+
+                require(["text!../samples/" + options.path], value);
+
+                ko.applyBindingsToNode(element, binding);
+
+                value.update = true;
+            }
+        }
     };
 
     //initialize a JavaScript CodeMirror editor

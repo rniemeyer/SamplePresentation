@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "source-code-pro";
+    src: url(font/source-code-pro/TTF/SourceCodePro-Regular.ttf) format("truetype");
+}
+
 body
 {
-    background: #fafafa;
+    background: rgb(211, 212, 214);
     zoom: 1;
 }
 
@@ -75,9 +80,14 @@ h2.center
     color: plum;
 }
 
-.CodeMirror .currentline
+.cm-s-rubyblue .currentline
 {
-    background-color: #F5F1E2;
+    background-color: #384055;
+}
+
+.cm-s-eclipse .currentline
+{
+    background-color: #E3E7F5;
 }
 
 .CodeMirror-scroll
@@ -92,7 +102,7 @@ h2.center
 {
     margin: 5px;
     font-size: 1.5em;
-    background-color: #F5F1E2;
+    background-color: #DFE3F1;
     color: #000;
     border-radius: 5px;
     padding: 5px;
@@ -182,7 +192,7 @@ h2.center
 }
 
 .compare-right-move {
-    margin-left: 50%;
+    margin-left: 55%;
     opacity: 0.6;
 }
 
@@ -329,11 +339,10 @@ div.center
 }
 
 .marker.what {
-    background-color: #ccc;
-    color: #666;
+    background-color: #E3E7F5;
+    color: #333;
     box-shadow: 2px 2px 2px #666;
 }
-
 
 .why img {
     height: 75px;
@@ -385,4 +394,8 @@ div.center
 
 .block-point-name:after {
     content: " - "
+}
+
+.editor-more {
+    margin-top: 50px;
 }
