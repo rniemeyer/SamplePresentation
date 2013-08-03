@@ -1,7 +1,7 @@
 <script type="text/html" id="peopleList">
-    <% _.each(people(), function(person) { %>
+    <% _.each(campers(), function(camper) { %>
     <li>
-        <b><%= person.name %></b> is <%= person.age %> years old
+        <b><%= camper.name %></b> is in room <%= camper.room %>
     </li>
     <% }) %>
 </script>

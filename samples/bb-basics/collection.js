@@ -1,7 +1,30 @@
-/**
- * Created with JetBrains WebStorm.
- * User: ryan
- * Date: 7/26/13
- * Time: 8:25 PM
- * To change this template use File | Settings | File Templates.
- */
+var Campers = Backbone.Collection.extend({
+    model: Camper
+});
+
+var CampersView = Backbone.View.extend({
+    initialize : function() {
+        this.camperViews = this.collection.map(function(camper) {
+            return new CamperView({ model: camper });
+        });
+
+        this.render();
+    },
+
+    render : function() {
+        var $el = this.$el;
+        _.each(this.camperViews, function(item) {
+            $el.append(item.render());
+        });
+    }
+});
+
+var campers = new Campers([
+    { name: "Bob Smith", room: 515 },
+    { name: "Sue Jones", room: 475 }
+]);
+
+var camperViews = new CampersView({
+    collection: campers,
+    el: "#campers"
+});

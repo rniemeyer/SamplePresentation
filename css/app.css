@@ -44,12 +44,12 @@ h2.center
 
 #map a
 {
-    color: #CCC;
+    color: #999;
 }
 
 #map a.selected
 {
-    color: #999;
+    color: #666;
     font-size: 1.2em;
 }
 
@@ -397,5 +397,5 @@ div.center
 }
 
 .editor-more {
-    margin-top: 50px;
+    margin-top: 25px;
 }

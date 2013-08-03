@@ -1,10 +1,10 @@
-var User = Backbone.Collection.extend({
-    url: '/users'
+var Campers = Backbone.Collection.extend({
+    url: "/campers"
 });
-var users = new Users();
+var campers = new Campers();
 
-users.fetch({
+campers.fetch({
     success: function(){
-        alert('Recovered ' + users.length + ' users');
+        alert('Recovered ' + campers.length + ' campers');
     }
 });
