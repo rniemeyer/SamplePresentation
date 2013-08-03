@@ -1,5 +1,3 @@
-var camper = new Camper({ name: "Bob Smith", room: 515 });
-
 var View = Backbone.View.extend({
     events: {
         "keyup #nameEdit": function() {
@@ -7,7 +5,6 @@ var View = Backbone.View.extend({
         }
     },
     initialize: function(data) {
-        this.model = new Camper({ name: "Bob", room: 100 });
         this.listenTo(this.model, "change:name", this.onNameUpdate, this);
         this.onNameUpdate();
     },
@@ -18,4 +15,5 @@ var View = Backbone.View.extend({
     }
 });
 
-var view = new View({ el: "#content" });
+var camper = new Camper({ name: "Bob Smith", room: 515 });
+var view = new View({ el: "#content" , model: camper });

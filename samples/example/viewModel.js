@@ -24,7 +24,6 @@ var CamperView = Backbone.View.extend({
     }
 });
 
-
 var model = new Camper({ name: "Bob Smith", room: 515 });
 
 var view = new CamperView({
