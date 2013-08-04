@@ -3,6 +3,11 @@ define(["knockout"], function(ko) {
         this.title = "More Knockout";
         this.allPoints = [
             {
+                title: "Built-in bindings",
+                path: "ko-more/built-in-bindings.js",
+                type: "js"
+            },
+            {
                 title: "Custom bindings",
                 path: "ko-more/custom-bindings.js",
                 type: "js"

@@ -163,6 +163,11 @@ h2.center
     font-size: .8em;
 }
 
+.points iframe {
+    width: 100%;
+    height: 650px;
+}
+
 .compare {
     height: 600px;
 }

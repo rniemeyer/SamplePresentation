@@ -3,11 +3,11 @@ define(["knockout"], function(ko) {
         var self = this;
         this.title = "Why focus on these two?";
         this.allPoints = [
-            { template: "marker", data: { x: 1, y: 0, rotate: -5, title: "Lightweight" } },
-            { template: "marker", data: { x: 4, y: 0, rotate: 5, title: "Few Dependencies" } },
-            { template: "marker", data: { x: 3.5, y: 1.25, rotate: 15, title: "Focused / lean" } },
-            { template: "marker", data: { x: 0, y: 1, rotate: -15, title: "Flexible / Build your own framework" } },
-            { template: "marker", data: { x: 1.5, y: 1.75, rotate: 5, title: "Resources / Community Support" } }
+            { template: "marker", data: { x: 2.25, y: 1.75, rotate: -5, title: "Lightweight" } },
+            { template: "marker", data: { x: 4, y: 2.25, rotate: 5, title: "Few Dependencies" } },
+            { template: "marker", data: { x: 3.5, y: 1.5, rotate: 15, title: "Focused / lean" } },
+            { template: "marker", data: { x: 0, y: 1.5, rotate: -15, title: "Flexible / Build your own framework" } },
+            { template: "marker", data: { x: 1, y: 2.5, rotate: 5, title: "Resources / Community Support" } }
         ];
 
         this.points = ko.observableArray([]);
