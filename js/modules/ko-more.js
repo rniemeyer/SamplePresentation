@@ -4,27 +4,30 @@ define(["knockout"], function(ko) {
         this.allPoints = [
             {
                 title: "Built-in bindings",
-                path: "ko-more/built-in-bindings.js",
-                type: "js"
+                template: "bindings"
             },
             {
                 title: "Custom bindings",
                 path: "ko-more/custom-bindings.js",
+                template: "editor",
                 type: "js"
             },
             {
                 title: "Template engines",
                 path: "ko-more/template-engines.html",
+                template: "editor",
                 type: "html"
             },
             {
                 title: "Extensions",
                 path: "ko-more/extensions.js",
+                template: "editor",
                 type: "js"
             },
             {
                 title: "Binding providers",
                 path: "ko-more/binding-providers.html",
+                template: "editor",
                 type: "html"
             }
         ];

@@ -29,6 +29,11 @@ h2.center
     margin-top: 250px;
 }
 
+.intro {
+    font-size: 3em;
+    text-align: center;
+}
+
 #content
 {
     margin-top: 30px;
@@ -165,7 +170,7 @@ h2.center
 
 .points iframe {
     width: 100%;
-    height: 650px;
+    height: 600px;
 }
 
 .compare {
@@ -304,6 +309,17 @@ div.center
     margin: 10px;
 }
 
+.bindings li {
+    font-size: 32px;
+    background-color: #B40404;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #610B0B;
+    padding: 15px;
+    margin: 5px;
+    display: inline-block;
+}
+
 .marker span
 {
     color: #fff;
@@ -403,4 +419,9 @@ div.center
 
 .editor-more {
     margin-top: 25px;
+}
+
+.twitter {
+    width: 50px;
+    margin-left: 20px;
 }

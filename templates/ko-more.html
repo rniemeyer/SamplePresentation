@@ -5,6 +5,39 @@
     </li>
 </ul>
 
-<div class="editor-more" data-bind="with: currentPoint">
-    <div data-bind="remoteEditor: $data"></div>
+<div data-bind="with: currentPoint">
+    <div data-bind="template: template"></div>
 </div>
+
+<script id="editor" type="text/html">
+    <div class="editor-more"">
+        <div data-bind="remoteEditor: $data"></div>
+    </div>
+</script>
+
+<script id="bindings" type="text/html">
+    <ul class="bindings">
+        <li>visible</li>
+        <li>text</li>
+        <li>html</li>
+        <li>css</li>
+        <li>style</li>
+        <li>attr</li>
+        <li>foreach</li>
+        <li>if</li>
+        <li>ifnot</li>
+        <li>with</li>
+        <li>click</li>
+        <li>event</li>
+        <li>submit</li>
+        <li>enable</li>
+        <li>disable</li>
+        <li>value</li>
+        <li>hasFocus</li>
+        <li>checked</li>
+        <li>options</li>
+        <li>selectedOptions</li>
+        <li>uniqueName</li>
+        <li>template</li>
+    </ul>
+</script>
