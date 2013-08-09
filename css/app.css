@@ -297,6 +297,16 @@ div.center
     margin-top: 50px;
 }
 
+.together img {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333;
+    margin-top: 50px;
+}
+
 .marker
 {
     position: absolute;

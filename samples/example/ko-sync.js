@@ -7,9 +7,7 @@ var camperViewModel = {
 
 camper.on("change", function(model) {
     _.each(model.changed, function(value, prop) {
-        if (ko.isWriteableObservable(camperViewModel[prop])) {
-            camperViewModel[prop](model.changed[prop]);
-        }
+        camperViewModel[prop](value);
     }, this);
 });
 
