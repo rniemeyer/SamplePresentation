@@ -5,7 +5,8 @@
 
 body
 {
-    background: rgb(211, 212, 214);
+    background: rgb(181,189,200);
+    background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #DCDEEF 100%);
     zoom: 1;
 }
 
