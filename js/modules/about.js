@@ -4,6 +4,7 @@ define(["knockout"], function(ko) {
         this.koPointsAll = [
             { title: "Created by Steve Sanderson"},
             { title: "Released in mid 2010"},
+            { title: "Open-source - MIT license" },
             { title: "Currently at version 2.3.0"},
             { title: "15kb min+gz. No strict dependencies."},
             { title: "Focuses on data binding between view and view model"}
@@ -12,6 +13,7 @@ define(["knockout"], function(ko) {
         this.bbPointsAll = [
             { title: "Created by Jeremy Ashkenas (DocumentCloud)"},
             { title: "Released in late 2010"},
+            { title: "Open-source - MIT license" },
             { title: "Currently at version 1.0.0"},
             { title: "6.3kb min+gz. Underscore only strict dependency."},
             { title: "Provides structure and building blocks"}

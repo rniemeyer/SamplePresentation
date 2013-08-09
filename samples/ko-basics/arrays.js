@@ -1,8 +1,10 @@
 var ViewModel = function() {
-   this.campers = ko.observableArray([
+   this.campers = [
         new Camper({ name: "Bob Smith", room: 515 }),
         new Camper({ name: "Sue Jones", room: 110 })
-   ]);
+   ];
 };
 
-ko.applyBindings(new ViewModel());
+var vm = new ViewModel();
+
+ko.applyBindings(vm);

@@ -1,4 +1,4 @@
-define(["knockout"], function(ko) {
+define(["knockout", "sample", "jqueryui"], function(ko, Sample) {
     return function() {
         this.title = "More Knockout";
         this.allPoints = [
@@ -8,9 +8,10 @@ define(["knockout"], function(ko) {
             },
             {
                 title: "Custom bindings",
-                path: "ko-more/custom-bindings.js",
-                template: "editor",
-                type: "js"
+                template: "sample",
+                data: new Sample("", "ko-more", [
+                    new Sample.State("","custom-bindings", { forceLoad: true }),
+                ])
             },
             {
                 title: "Template engines",

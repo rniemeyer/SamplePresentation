@@ -2,6 +2,7 @@ require.config({
     paths: {
         "knockout": "ext/knockout-2.1.0",
         "jquery": "ext/jquery-1.7.2.min",
+        "jqueryui": "ext/jquery-ui.min",
         "text": "ext/text",
         "codemirror": "ext/codemirror",
         "bootstrap": "ext/bootstrap.min",

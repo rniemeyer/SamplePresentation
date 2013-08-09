@@ -12,3 +12,5 @@ ko.bindingHandlers.slider = {
         $(element).slider("value", observable());
     }
 };
+
+ko.applyBindings({ amount: ko.observable(50) });

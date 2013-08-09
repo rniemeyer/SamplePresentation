@@ -281,7 +281,7 @@ div.center
     float: left;
     width: 9%;
     height: 9%;
-    margin-left: -120px;
+    margin-left: -50px;
     margin-right: 10px;
     position: relative;
     bottom: 15px;
@@ -388,10 +388,10 @@ div.center
 }
 
 .what-point {
-    width: 50%;
+    width: 60%;
     font-size: 3.5em;
-    left: 22%;
-    bottom: 35%;
+    left: 16%;
+    bottom: 40%;
 }
 
 .x.what-point:after {
@@ -403,9 +403,9 @@ div.center
 }
 
 .block-point {
-    width: 80%;
+    width: 90%;
     font-size: 2.75em;
-    left: 10%;
+    left: 2%;
     bottom: 35%;
 }
 
