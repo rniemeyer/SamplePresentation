@@ -26,7 +26,7 @@ define(["knockout"], function(ko) {
             { template: "marker", data: { x: 4.75, y: 1.25, rotate: 5, title: "React" } },
             { template: "marker", data: { x: 1.5, y: 3, rotate: -5, title: "Bacon" } },
             { template: "marker", data: { x: 0, y: 3, rotate: 20, title: "BaconBacon" } },
-            { template: "marker", data: { x: 2.75, y: 3.25, rotate: -5, title: "3B" } }
+            { template: "marker", data: { x: 2.75, y: 3.25, rotate: -5, title: "3BJS" } }
         ];
 
         this.activeLibraries = ko.observableArray();

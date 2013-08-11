@@ -300,9 +300,9 @@ div.center
 
 .together img {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 35%;
-    width: 30%;
+    width: 20%;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #333;
     margin-top: 50px;
@@ -439,4 +439,12 @@ div.center
 
 .knockback {
     margin-top: -50px;
+}
+
+.thanks {
+    font-size: 3em;
+}
+
+.thanks h2 {
+    margin: 50px 0;
 }

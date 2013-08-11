@@ -17,7 +17,6 @@
             new Section("comparison"),
             new Section("together"),
             new Section("example", "sample"),
-            new Section("summary"),
             new Section("end")
         ]);
 

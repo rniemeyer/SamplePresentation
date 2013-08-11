@@ -4,10 +4,9 @@ var CamperView = Backbone.View.extend({
 
         _.each(this.model.attributes, function(value, item) {
             this.viewModel[item] = ko.observable(value);
-        }, this);
-
-        ko.computed(function() {
-            this.model.set(ko.toJS(this.viewModel));
+            this.viewModel[item].subscribe(function(newValue) {
+                this.model.set(item, newValue);
+            }, this);
         }, this);
 
         ko.applyBindings(this.viewModel, this.el);

@@ -1,12 +1,12 @@
 var camper = new Camper({ name: "Bob Smith", room: 515 });
 
 var camperViewModel = {
-    name: ko.observable("Bob"),
-    room: ko.observable(515)
+    name: ko.observable(camper.name),
+    room: ko.observable(camper.room)
 };
 
-var sync = ko.computed(function() {
-    camper.set(ko.toJS(camperViewModel));
+camper.viewModel.name.subscribe(function(newValue) {
+    camper.set("name", newValue);
 });
 
 camperViewModel.name("Robert");

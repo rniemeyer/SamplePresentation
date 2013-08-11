@@ -9,6 +9,12 @@ var CamperView = Backbone.View.extend({
             }, this);
         }, this);
 
+        this.listenTo(this.model, "change", function(model) {
+            _.each(model.changed, function(value, prop) {
+                this.viewModel[prop](value);
+            }, this);
+        }, this);
+
         ko.applyBindings(this.viewModel, this.el);
     }
 });

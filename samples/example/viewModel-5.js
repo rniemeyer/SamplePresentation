@@ -1,4 +1,9 @@
 var CamperView = Backbone.View.extend({
+    events: {
+        "click .clear": function() {
+            this.model.clear();
+        }
+    },
     initialize: function(options) {
         this.viewModel = {};
 
@@ -9,7 +14,7 @@ var CamperView = Backbone.View.extend({
             }, this);
         }, this);
 
-        this.model.on("change", function(model) {
+        this.listenTo(this.model, "change", function(model) {
             _.each(model.changed, function(value, prop) {
                 this.viewModel[prop](value);
             }, this);
