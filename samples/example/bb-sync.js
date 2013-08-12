@@ -5,7 +5,7 @@ var camperViewModel = {
     room: ko.observable(camper.room)
 };
 
-camper.viewModel.name.subscribe(function(newValue) {
+camperViewModel.name.subscribe(function(newValue) {
     camper.set("name", newValue);
 });
 
