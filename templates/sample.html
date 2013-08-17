@@ -1,7 +1,7 @@
 <div data-bind="keys: { key191: updateCode }, modifier: 'altKey'">
     <div class="row">
         <div class="span12">
-            <h3 class="sample-head">
+            <h3 class="sample-head" data-bind="visible: currentState().showTitle">
                 <span data-bind="text: title"></span>:
                 <span class="description" data-bind="fadeText: currentState().description"></span>
             </h3>

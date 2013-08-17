@@ -1,8 +1,0 @@
-<div class="points" data-bind="foreach: points">
-    <div data-bind="template: { name: template, data: $data.data || $root }"></div>
-</div>
-
-<script id="site" type="text/html">
-    <h2 class="knockback" data-bind="text: url"></h2>
-    <iframe data-bind="attr: { src: localUrl }"></iframe>
-</script>

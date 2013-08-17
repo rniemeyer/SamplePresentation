@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Camp Rivals: Knockout and Backbone</title>
+    <title>Knockout: 10 Rounds</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/codemirror.css" />
     <link rel="stylesheet" type="text/css" href="css/eclipse.css" />
@@ -22,9 +22,8 @@
             <div data-bind="template: { name: template, 'if': data, data: data }"></div>
         </div>
         <div id="map">
-            <img class="that" src="img/that.png" />
+            <!--<img class="that" src="img/that.png" />-->
             <img class="logo" src="img/ko-logo.png" />
-            <img class="logo bb-logo" src="img/backbone.png" />
             <hr />
             <div data-bind="foreach: sections">
                 <a href="#" data-bind="text: name, click: $root.index.bind(null, $index()), css: { selected: $index() === $root.index() }"></a>

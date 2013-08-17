@@ -1,6 +1,6 @@
 define(function() {
     return {
-        title: "Camp Rivals: Knockout and Backbone",
+        title: "Advanced Knockout: 10 Rounds",
         speaker: "Ryan Niemeyer",
         twitter: "@RPNiemeyer"
     };

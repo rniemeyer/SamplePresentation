@@ -146,6 +146,7 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
         this.showHtml = !options.hideHtml;
         this.showJs = !options.hideJs;
         this.showResult = !options.hideResult;
+        this.showTitle = !options.hideTitle;
 
         this.forceLoad = options.forceLoad;
         this.loadAsSection = options.loadAsSection;
