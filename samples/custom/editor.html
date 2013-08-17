@@ -1,0 +1,9 @@
+<div data-bind="with: selected">
+    <input data-bind="value: name" />
+</div>
+<hr/>
+<ul data-bind="foreach: missions">
+    <li>
+        <a href="#" data-bind="text: name, click: $parent.selected"></a>
+    </li>
+</ul>

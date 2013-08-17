@@ -1,0 +1,5 @@
+<input data-bind="value: newSupply, enterKey: addSupply" /><hr/>
+<button data-bind="click: addSupply">Add Supply</button><hr/>
+<ul data-bind="foreach: supplies">
+    <li data-bind="text: $data"></li>
+</ul>

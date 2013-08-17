@@ -1,6 +1,8 @@
 require.config({
     paths: {
         "knockout": "ext/knockout-2.1.0",
+        "knockout-delegatedEvents": "ext/knockout-delegatedEvents.min",
+        "knockout-postbox": "ext/knockout-postbox.min",
         "jquery": "ext/jquery-1.7.2.min",
         "jqueryui": "ext/jquery-ui.min",
         "text": "ext/text",
@@ -21,7 +23,7 @@ require.config({
     }
 });
 
-require(["knockout", "app", "jquery", "backbone", "bootstrap", "utilities", "stringTemplateEngine", "text", "codemirror"], function(ko, App, $) {
+require(["knockout", "app", "jquery", "backbone", "bootstrap", "utilities", "stringTemplateEngine", "text", "codemirror", "knockout-delegatedEvents", "knockout-postbox"], function(ko, App, $) {
     var vm = new App();
 
     //simple client-side routing - update hash when current section is changed

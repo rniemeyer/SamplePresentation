@@ -16,8 +16,8 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
                 html = sample.html(),
                 js = sample.js();
 
-            ko.applyBindings = function(vm) {
-                realApply(vm, container);
+            ko.applyBindings = function(vm, overrideContainer) {
+                realApply(vm, overrideContainer || container);
             };
 
             ko.utils.setHtml(container, html);
@@ -151,6 +151,12 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
         this.forceLoad = options.forceLoad;
         this.loadAsSection = options.loadAsSection;
         this.sectionData = ko.observable();
+
+        this.shrinkHtmlEditor = ko.observable(false);
+
+        this.toggleHtml = function() {
+            this.shrinkHtmlEditor(!this.shrinkHtmlEditor());
+        }.bind(this);
     };
 
     var Sample = function(title, key, states, loadImmediately) {

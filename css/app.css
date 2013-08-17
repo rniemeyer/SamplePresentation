@@ -104,6 +104,10 @@ h2.center
     overflow: scroll;
 }
 
+.error {
+    color: red;
+}
+
 .sample
 {
     margin: 5px;
@@ -447,4 +451,17 @@ div.center
 
 .thanks h2 {
     margin: 50px 0;
+}
+
+.fn
+{
+    width: 700px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.shrink .CodeMirror
+{
+    max-height: 100px;
 }

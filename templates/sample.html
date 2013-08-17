@@ -8,11 +8,11 @@
         </div>
     </div>
 
-    <div class="row" data-bind="ifnot: currentState().sectionData">
+    <div class="row" data-bind="ifnot: currentState().loadAsSection">
         <div data-bind="css: { span9: currentState().showResult, span12: !currentState().showResult }">
             <div data-bind="visible: currentState().showHtml">
-                <h3>HTML</h3>
-                <div data-bind="htmlEditor: html"></div>
+                <h3 data-bind="click: currentState().toggleHtml">HTML</h3>
+                <div data-bind="htmlEditor: html, css: { shrink: currentState().shrinkHtmlEditor }"></div>
             </div>
             <div data-bind="visible: currentState().showJs">
                 <h3>JavaScript</h3>
