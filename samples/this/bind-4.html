@@ -1,6 +1,6 @@
-<ul data-bind="foreach: users, delegatedHandler: 'click'">
+<ul class="list" data-bind="foreach: users">
     <li>
         <span data-bind="text: name"></span>
-        <button data-click="removeItem">x</button>
+        <button class="remove">x</button>
     </li>
 </ul>

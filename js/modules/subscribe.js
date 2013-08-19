@@ -5,7 +5,8 @@ define(["knockout", "sample"], function(ko, Sample) {
         new Sample.State("start","start", { forceLoad: true }),
         new Sample.State("beforeChange","before"),
         new Sample.State("topic","topic", { forceLoad: true }),
-        new Sample.State("ko.postbox","postbox", { forceLoad: true })
+        new Sample.State("knockout-postbox","postbox", { forceLoad: true }),
+        new Sample.State("knockout-postbox","postbox-2", { forceLoad: true })
     ]);
 
 });

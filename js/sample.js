@@ -4,17 +4,20 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
     //display the output of HTML and JavaScript from strings
     ko.bindingHandlers.sample = {
         init: function(element) {
-            var container = document.createElement("div");
-            element.appendChild(container);
-
             return { controlsDescendantBindings: true };
         },
         update: function(element, valueAccessor) {
             var sample = valueAccessor(),
                 realApply = ko.applyBindings,
-                container = element.firstChild,
+                container = document.createElement("div"),
                 html = sample.html(),
                 js = sample.js();
+
+            if (element.firstChild) {
+                ko.removeNode(element.firstChild);
+            }
+
+            element.appendChild(container);
 
             ko.applyBindings = function(vm, overrideContainer) {
                 realApply(vm, overrideContainer || container);

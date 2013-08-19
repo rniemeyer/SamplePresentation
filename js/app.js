@@ -17,6 +17,7 @@
             new Section("provider", "sample"),
             new Section("debugging", "sample"),
             new Section("smells", "sample"),
+            new Section("summary"),
             new Section("end")
         ]);
 

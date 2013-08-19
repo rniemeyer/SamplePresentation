@@ -1,13 +1,3 @@
-<ul data-bind="template: { name: getTemplate, foreach: users }"></ul>
-
-<script id="jsTmpl" type="text/html">
-    <li>
-        JS:<span data-bind="text: name"></span>
-    </li>
-</script>
-
-<script id="vdTmpl" type="text/html">
-    <li>
-        VD: <span data-bind="text: name"></span>
-    </li>
-</script>
+<ul data-bind="foreach: users">
+    <li data-bind="text: name"></li>
+</ul>

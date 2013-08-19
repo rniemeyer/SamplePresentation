@@ -6,7 +6,8 @@ define(["knockout", "sample"], function(ko, Sample) {
         new Sample.State("bind handler","bind-1"),
         new Sample.State("bind in markup","bind-2"),
         new Sample.State("closure","bind-3"),
-        new Sample.State("plugin","bind-4")
+        new Sample.State("delegated","bind-4"),
+        new Sample.State("plugin (knockout-delegatedEvents)","bind-5")
     ]);
 
 });

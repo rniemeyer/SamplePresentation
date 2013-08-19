@@ -1,30 +1,27 @@
 require.config({
     paths: {
-        "knockout": "ext/knockout-2.1.0",
+        "knockout": "ext/knockout-2.3.0",
         "knockout-delegatedEvents": "ext/knockout-delegatedEvents.min",
         "knockout-postbox": "ext/knockout-postbox.min",
+        "knockout-classBindingProvider": "ext/knockout-classBindingProvider.min",
         "jquery": "ext/jquery-1.7.2.min",
         "jqueryui": "ext/jquery-ui.min",
         "text": "ext/text",
         "codemirror": "ext/codemirror",
-        "bootstrap": "ext/bootstrap.min",
-        "underscore": "ext/underscore-min",
-        "backbone": "ext/backbone-min"
+        "bootstrap": "ext/bootstrap.min"
     },
     shim: {
         "bootstrap": ["jquery"],
-        "backbone": {
-            deps: [ "jquery", "underscore" ],
-            exports: "Backbone"
-        },
         "underscore": {
             exports: "_"
         }
     }
 });
 
-require(["knockout", "app", "jquery", "backbone", "bootstrap", "utilities", "stringTemplateEngine", "text", "codemirror", "knockout-delegatedEvents", "knockout-postbox"], function(ko, App, $) {
+require(["knockout", "app", "jquery", "knockout-classBindingProvider", "bootstrap", "utilities", "stringTemplateEngine", "text", "codemirror", "knockout-delegatedEvents", "knockout-postbox"], function(ko, App, $, classBindingProvider) {
     var vm = new App();
+
+    ko.classBindingProvider = classBindingProvider;
 
     //simple client-side routing - update hash when current section is changed
     vm.currentSection.subscribe(function(newValue) {

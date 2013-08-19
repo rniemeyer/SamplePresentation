@@ -10,8 +10,3 @@ ViewModel.prototype.removeItem = function(item) {
 };
 
 ko.applyBindings(new ViewModel());
-
-$(".list").on("click", ".remove", function() {
-    var context = ko.contextFor(this);
-    context.$parent.removeItem(context.$data);
-});

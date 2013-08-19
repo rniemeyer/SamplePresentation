@@ -1,0 +1,10 @@
+<div data-bind="if: items().length > 10">
+    <button data-bind="click: function() {
+        $.ajax({
+            url: '/users',
+            dataType: 'json',
+        }).done(function (data) {
+            items.push.apply(items, data);
+        });
+    }">Get More</button>
+</div>
