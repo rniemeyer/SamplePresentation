@@ -1,6 +1,6 @@
 define(function() {
     return {
         title: "Round 9: Debugging Tips",
-        description: "A description about dynamic templates."
+        quote: "Tennessee has more than 3,800 documented caves."
     };
 });

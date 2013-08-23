@@ -27,7 +27,13 @@ h2.center
 {
     font-size: 62px;
     line-height: 88px;
-    margin-top: 250px;
+    margin-top: 150px;
+}
+
+.quote {
+    font-size: 42px;
+    line-height: 120%;
+    margin-top: 100px;
 }
 
 .intro {
@@ -286,13 +292,11 @@ div.center
     margin-right: 10px;
 }
 
-.that
+.dev
 {
     float: left;
-    width: 9%;
-    height: 9%;
     margin-left: -50px;
-    margin-right: 10px;
+    margin-right: 20px;
     position: relative;
     bottom: 15px;
 }

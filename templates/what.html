@@ -1,25 +1,7 @@
 <h2 data-bind="text: title"></h2>
 
-<div class="why" data-bind="visible: showLogos() && !showVideo()">
-
-</div>
-
-<div data-bind="with: currentPoint, visible: !showVideo()">
-    <div class="marker what-point" data-bind="fadeText: title, click: $parent.showExtra, css: { x: $parent.showX }"></div>
-</div>
-
-<div class="points" data-bind="foreach: activeLibraries">
-    <div data-bind="template: { name: template, data: $data.data || $root }"></div>
-</div>
-
-<div data-bind="if: showVideo">
-    <video data-bind="attr: { src: 'img/bb.m4v?' + (new Date()).valueOf() }" controls></video>
-    <h3 data-bind="click: showVideo.bind(null, false)">CodeSchool.com - http://www.youtube.com/watch?v=8QO1pvG2g0w</h3>
-</div>
-
-<script id="marker" type="text/html">
-    <div data-bind="css: { hide: $parents[1].hideMarkers }">
-        <div class="marker what" data-bind="fadeText: title, style: { left: x * 200 + 'px', top: y * 200 + 'px', '-webkit-transform': 'rotate(' + rotate + 'deg)' }">
-        </div>
-    </div>
-</script>
+<ul class="points" data-bind="foreach: points">
+    <li>
+        <span data-bind="fadeText: title"></span>
+    </li>
+</ul>

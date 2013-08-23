@@ -1,6 +1,6 @@
 define(["knockout", "sample"], function(ko, Sample) {
 
-    return  new Sample("6- custom bindings", "custom", [
+    return  new Sample("5- custom bindings", "custom", [
         new Sample.State("intro", "intro", { loadAsSection: true, hideTitle: true }),
         new Sample.State("How they work","anatomy", { hideHtml: true, hideResult: true, forceLoad: true }),
         new Sample.State("Wrapper","wrapper-start", { forceLoad: true }),
