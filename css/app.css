@@ -27,13 +27,14 @@ h2.center
 {
     font-size: 62px;
     line-height: 88px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .quote {
     font-size: 42px;
     line-height: 120%;
     margin-top: 100px;
+    font-style: italic;
 }
 
 .intro {

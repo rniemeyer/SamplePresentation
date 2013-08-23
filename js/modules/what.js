@@ -7,7 +7,7 @@ define(["knockout"], function(ko) {
             { title: "v2.3.0 and things coming in KO 3.0"},
             { title: "10 rounds of tips, tricks, patterns"},
             { title: "Byte-sized code samples"},
-            { title: "Fun facts about Tennessee"}
+            { title: "Strange Tennessee Laws"}
         ];
 
         this.points = ko.observableArray();
