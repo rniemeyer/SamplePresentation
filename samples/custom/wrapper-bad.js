@@ -1,10 +1,10 @@
 var ViewModel = function() {
-    this.newSupply = ko.observable();
-    this.supplies = ko.observableArray();
-    this.addSupply = function(data, event) {
+    this.newUser = ko.observable();
+    this.users = ko.observableArray();
+    this.addUser = function(data, event) {
         if (event.keyCode === 13) {
-            this.supplies.push(this.newSupply());
-            this.newSupply("");
+            this.users.push(this.newUser());
+            this.newUser("");
         }
     };
 };

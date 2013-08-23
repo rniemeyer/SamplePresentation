@@ -4,7 +4,7 @@ define(["knockout", "sample"], function(ko, Sample) {
         new Sample.State("intro", "intro", { loadAsSection: true, hideTitle: true }),
         new Sample.State("start","start", { forceLoad: true }),
         new Sample.State("deferEvaluation","defer"),
-        new Sample.State("disposeWhenNodeIsRemove","disposeWhenNodeIsRemove"),
+        new Sample.State("disposeWhenNodeIsRemoved","disposeWhenNodeIsRemoved"),
         new Sample.State("dispose","dispose")
     ]);
 

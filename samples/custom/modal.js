@@ -1,7 +1,7 @@
 ko.bindingHandlers.modal = {
     init: function(element, valueAccessor) {
-        var data = valueAccessor();
         $(element).modal({ show: false }).on("hidden", function() {
+            var data = valueAccessor();
             if (ko.isWriteableObservable(data)) {
                 data(null);
             }
@@ -19,9 +19,9 @@ ko.bindingHandlers.modal = {
 
 ko.applyBindings({
     selected: ko.observable(),
-    missions: [
-        { name: ko.observable("Save the village")},
-        { name: ko.observable("Stop the mobster")},
-        { name: ko.observable("Rescue the children")}
+    users: [
+        { name: ko.observable("Andy")},
+        { name: ko.observable("Amy")},
+        { name: ko.observable("Deanna")}
     ]
 });

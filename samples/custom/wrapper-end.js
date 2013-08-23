@@ -1,12 +1,12 @@
 ko.bindingHandlers.enterKey = {
-    init: function(element, valueAccessor, allBindings, data, context) {
+    init: function(el, valueAccessor, allBindings, data, context) {
         var wrapper = function(data, event) {
             if (event.keyCode === 13) {
                 valueAccessor().call(this, data, event);
             }
         };
 
-        ko.applyBindingsToNode(element, {
+        ko.applyBindingsToNode(el, {
             event: {
                 keyup: wrapper
             }
@@ -15,11 +15,11 @@ ko.bindingHandlers.enterKey = {
 };
 
 var ViewModel = function() {
-    this.newSupply = ko.observable();
-    this.supplies = ko.observableArray();
-    this.addSupply = function() {
-        this.supplies.push(this.newSupply());
-        this.newSupply("");
+    this.newUser = ko.observable();
+    this.users = ko.observableArray();
+    this.addUser = function() {
+        this.users.push(this.newUser());
+        this.newUser("");
     };
 };
 

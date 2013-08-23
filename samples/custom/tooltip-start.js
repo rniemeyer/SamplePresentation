@@ -1,8 +1,8 @@
-var mission = {
-    name: ko.observable("Find the missing son"),
-    help: ko.observable("enter a summary of the mission")
+var user = {
+    name: ko.observable("Tyson"),
+    role: ko.observable("JavaScript Engineer")
 };
 
-ko.applyBindings(mission);
+ko.applyBindings(user);
 
-$("#name").tooltip({ title: mission.help() });
+$("#name").tooltip({ title: user.role() });

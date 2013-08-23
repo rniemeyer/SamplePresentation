@@ -1,15 +1,15 @@
 ko.bindingHandlers.enterKey = {
-    init: function(element, valueAccessor, allBindings, data) {
+    init: function(el, valueAccessor, allBindings, data, context) {
 
     }
 };
 
 var ViewModel = function() {
-    this.newSupply = ko.observable();
-    this.supplies = ko.observableArray();
-    this.addSupply = function() {
-        this.supplies.push(this.newSupply());
-        thi.newSupply("");
+    this.newUser = ko.observable();
+    this.users = ko.observableArray();
+    this.addUser = function() {
+        this.users.push(this.newUser());
+        this.newUser("");
     };
 };
 
