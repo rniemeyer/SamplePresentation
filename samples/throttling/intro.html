@@ -1,2 +1,4 @@
 <h2 class="center" data-bind="text: title"></h2>
-<p class="quote" data-bind="text: quote"></p>
+<!-- ko if: showQuote -->
+<p class="quote" data-bind="fadeText: quote"></p>
+<!-- /ko -->

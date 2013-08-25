@@ -5,7 +5,9 @@ var ViewModel = function() {
         { name: "Kent", selected: ko.observable(false) }
     ];
 
+    this.counter = ko.observable(0);
     this.selectedUsers = ko.computed(function() {
+        this.counter(this.counter.peek() + 1);
         return ko.utils.arrayFilter(this.users, function(user) {
             return user.selected();
         });

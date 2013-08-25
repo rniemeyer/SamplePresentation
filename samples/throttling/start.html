@@ -1,3 +1,12 @@
-<img src="img/family.jpg" data-bind="style: dimensions"/>
-<hr/>
-<button data-bind="click: grow">Grow</button>
+<ul data-bind="foreach: users">
+    <li>
+        <input type="checkbox" data-bind="checked: selected" />
+        <span data-bind="text: name"></span>
+    </li>
+</ul>
+
+<button data-bind="click: checkAll">Check All</button>
+
+<ul data-bind="foreach: selectedUsers">
+    <li data-bind="text: name"></li>
+</ul>
