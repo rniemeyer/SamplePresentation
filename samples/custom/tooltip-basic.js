@@ -1,7 +1,6 @@
 ko.bindingHandlers.tooltip = {
     init: function(element, valueAccessor) {
-        var value = ko.utils.unwrapObservable(valueAccessor());
-        $(element).tooltip({ title: value });
+        $(element).tooltip({ title: valueAccessor() });
     }
 };
 

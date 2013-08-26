@@ -1,7 +1,8 @@
 var ViewModel = function() {
     this.users = ko.observableArray([
         { name: ko.observable("Bob") },
-        { name: ko.observable("Ted") }
+        { name: ko.observable("Ted") },
+        { name: ko.observable("Jordan") }
     ]);
 };
 

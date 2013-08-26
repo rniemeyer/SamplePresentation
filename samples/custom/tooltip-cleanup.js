@@ -1,6 +1,6 @@
 ko.bindingHandlers.tooltip = {
     init: function(element, valueAccessor) {
-        var local = ko.utils.unwrapObservable(valueAccessor()),
+        var local = valueAccessor(),
             options = {};
 
         ko.utils.extend(options, ko.bindingHandlers.tooltip.options);
@@ -9,7 +9,7 @@ ko.bindingHandlers.tooltip = {
         $(element).tooltip(options);
 
         ko.utils.domNodeDisposal.addDisposeCallback(element, function() {
-            //$(element).tooltip("destroy");
+            $(element).tooltip("destroy");
         });
     },
     options: {

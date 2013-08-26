@@ -4,11 +4,11 @@ define(["knockout"], function(ko) {
         this.allPoints = [
             { title: "Dynamic Templating"},
             { title: "Controlling \"this\""},
-            { title: "Computed options"},
             { title: "Throttling"},
             { title: "Subscriptions"},
             { title: "Custom Bindings"},
             { title: "Extensions"},
+            { title: "Computed options"},
             { title: "Binding Providers"},
             { title: "Debugging Tips"},
             { title: "Code Smells"}

@@ -1,14 +1,5 @@
-<div class="modal fade hide" data-bind="modal: selected">
-    <div class="modal-header">
-        <button class="close" data-dismiss="modal">x</button>
-        <h3>Edit Record</h3>
-    </div>
-    <div class="modal-body">
-        <input data-bind="value: name" />
-    </div>
-    <div class="modal-footer">
-        <a href="#" data-dismiss="modal">Close</a>
-    </div>
+<div data-bind="modal: selected">
+    <input data-bind="value: name" />
 </div>
 <ul data-bind="foreach: users">
     <li>

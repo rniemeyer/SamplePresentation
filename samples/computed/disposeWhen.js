@@ -6,7 +6,7 @@ var ViewModel = function() {
         read: function() {
             return this.first() + " " + this.last();
         },
-        dispose: function() {
+        disposeWhen: function() {
             //decide when to dispose
         }
     }, this);

@@ -1,7 +1,7 @@
 ko.bindingHandlers.tooltip = {
     init: function(element, valueAccessor) {
         var options = {
-            title: ko.utils.unwrapObservable(valueAccessor())
+            title: valueAccessor()
         };
 
         ko.utils.extend(options, ko.bindingHandlers.tooltip.options);

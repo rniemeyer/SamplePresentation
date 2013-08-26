@@ -8,7 +8,8 @@ var ViewModel = function() {
         },
         write: function(newValue) {
             var vals = newValue.split(" ");
-            this.first(vals[0]).last(vals[1]);
+            this.first(vals[0]);
+            this.last(vals[1]);
         }
     }, this);
 };

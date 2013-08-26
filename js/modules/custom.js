@@ -15,7 +15,8 @@ define(["knockout", "sample"], function(ko, Sample) {
         new Sample.State("Tooltip cleanup", "tooltip-cleanup", { forceLoad: true }),
         new Sample.State("Editor", "editor", { forceLoad: true }),
         new Sample.State("Modal", "modal-start", { forceLoad: true }),
-        new Sample.State("Modal", "modal")
+        new Sample.State("Modal", "modal", { forceLoad: true }),
+        new Sample.State("Modal", "modal-end")
     ]);
 
 });

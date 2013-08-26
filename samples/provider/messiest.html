@@ -1,0 +1,2 @@
+
+<input data-bind="value: name, valueUpdate: ['input', 'afterkeydown'], disable: $parent.readOnly, css: { invalid: name.hasError, required: name.isRequired, recommended: name.isRecommended }, hasfocus: name.focused, enterKey: $parent.addUser, escapeKey: $parent.cancelChanges, tooltip: { title: role, trigger: 'hover' }, attr: { title: name.description, id: 'name-' + id, placeholder: name.placeholder }, visible: $root.hideEditor, event: { mouseover: showHelpText, mouseout: hideHelpText }" />

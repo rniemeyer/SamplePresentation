@@ -1,7 +1,7 @@
 define(["knockout"], function(ko) {
     return function() {
         this.title = "Round 10: Code Smells";
-        this.quote = "In the State of Tennessee, it is illegal to hunt animals from a plane.";
+        this.quote = "In the State of Tennesee, importing skunks is a crime.";
 
         this.showQuote = ko.observable(false);
 
