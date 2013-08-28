@@ -1,6 +1,6 @@
 define(function() {
     return {
-        title: "Advanced Knockout: 10 Rounds",
+        title: "Knockout Tips and Tricks",
         speaker: "Ryan Niemeyer",
         twitter: "@RPNiemeyer"
     };
