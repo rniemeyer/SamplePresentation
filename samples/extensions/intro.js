@@ -3,7 +3,7 @@ define(["knockout"], function(ko) {
         this.title = "Round 6: Extensions";
         this.quote = "In the State of Tennessee, duelists are not allowed to hold public office.";
 
-        this.showTitle = ko.observable(false);
+        this.showTitle = ko.observable(true);
 
         this.next = function() {
             if (!this.showTitle()) {

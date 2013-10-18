@@ -5,7 +5,6 @@
 
         this.sections = ko.observableArray([
             new Section("intro"),
-            new Section("me"),
             new Section("what"),
             new Section("templating", "sample"),
             new Section("this", "sample"),

@@ -3,7 +3,7 @@ define(["knockout"], function(ko) {
         this.title = "Round 1: Dynamic Templates";
         this.quote = "In the State of Tennessee, it is illegal to use a lasso to catch a fish.";
 
-        this.showTitle = ko.observable(false);
+        this.showTitle = ko.observable(true);
 
         this.next = function() {
             if (!this.showTitle()) {

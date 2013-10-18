@@ -3,7 +3,7 @@ define(["knockout"], function(ko) {
         this.title = "Round 9: Debugging Tips";
         this.quote = "In the State of Tennessee, it is against the law to drive a car while sleeping.";
 
-        this.showTitle = ko.observable(false);
+        this.showTitle = ko.observable(true);
 
         this.next = function() {
             if (!this.showTitle()) {

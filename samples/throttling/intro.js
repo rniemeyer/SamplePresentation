@@ -3,7 +3,7 @@ define(["knockout"], function(ko) {
         this.title = "Round 3: Throttling";
         this.quote = "In the State of Tennesee, snake-handling that endangers one's life is a crime.";
 
-        this.showTitle = ko.observable(false);
+        this.showTitle = ko.observable(true);
 
         this.next = function() {
             if (!this.showTitle()) {

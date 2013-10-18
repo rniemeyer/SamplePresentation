@@ -54,7 +54,8 @@ h2.title
 
 #map 
 {
-    width: 90%;
+    width: 1400px;
+    margin: auto;
     position: absolute;
     bottom: 10px;
     z-index: -1;
@@ -286,9 +287,10 @@ div.center
 
 .logo
 {
-    float: right;
-    width: 15%;
-    height: 15%;
+    position: absolute;
+    right: 250px;
+    width: 189px;
+    height: 55px;
     margin-top: -20px;
 }
 
@@ -301,6 +303,7 @@ div.center
 .dev
 {
     float: left;
+    width: 220px;
     margin-left: -50px;
     margin-right: 20px;
     position: relative;

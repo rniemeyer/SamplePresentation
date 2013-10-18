@@ -3,7 +3,7 @@ define(["knockout"], function(ko) {
         this.title = "Round 7: Computed Options";
         this.quote = "In the State of Tennessee, those wishing to sell a raptor must first obtain a permit.";
 
-        this.showTitle = ko.observable(false);
+        this.showTitle = ko.observable(true);
 
         this.next = function() {
             if (!this.showTitle()) {

@@ -3,7 +3,7 @@ define(["knockout"], function(ko) {
         this.title = "Round 8: Binding Providers";
         this.quote = "In the State of Tennessee, it is illegal to hunt animals from a plane.";
 
-        this.showTitle = ko.observable(false);
+        this.showTitle = ko.observable(true);
 
         this.next = function() {
             if (!this.showTitle()) {

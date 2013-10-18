@@ -42,6 +42,7 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
 
             ko.applyBindings = realApply;
         },
+
         //theme: "rubyblue"
         theme: "eclipse"
     };
