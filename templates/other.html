@@ -1,0 +1,8 @@
+<h2 data-bind="text: title"></h2>
+
+<ul class="points" data-bind="foreach: points">
+    <li>
+        <span data-bind="fadeText: title"></span>
+        <a href="#" target="_blank" data-bind="visible: $data.link, text: $data.link, attr: { href: $data.href }"></a>
+    </li>
+</ul>

@@ -1,6 +1,7 @@
 define(function() {
     return {
-        title: "Knockout Tips and Tricks",
-        date: "appendTo - 10/18/2013"
+        title: "What's New in Knockout 3.0",
+        speaker: "Ryan Niemeyer",
+        twitter: "@RPNiemeyer"
     };
 });

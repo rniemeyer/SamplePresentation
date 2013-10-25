@@ -1,0 +1,12 @@
+<ul data-bind="foreach: items">
+    <li>
+        <span data-bind="text: name"></span>
+        <button data-bind="click: $parent.removeItem">x</button>
+    </li>
+</ul>
+
+<button data-bind="click: addItem">Add</button>
+<button data-bind="click: items.bind(null, [])">Clear</button>
+<button data-bind="click: swap">Swap</button><hr/>
+
+<pre data-bind="text: ko.toJSON(changes, null, 2)"></pre>

@@ -1,0 +1,7 @@
+<div data-bind="text: count"></div>
+
+<ul data-bind="foreach: items">
+    <li data-bind="text: $data"></li>
+</ul>
+
+<button data-bind="click: addItem, enable: canAddItems">Add</button>

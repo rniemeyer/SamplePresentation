@@ -1,0 +1,13 @@
+<ul data-bind="foreach: items">
+    <li>
+        <input data-bind="checkedValue: $data,
+                          checked: $parent.selectedItems" type="checkbox" />
+        <span data-bind="text: name"></span>
+    </li>
+</ul>
+
+<hr/>
+
+<ul data-bind="foreach: selectedItems">
+    <li data-bind="text: name"></li>
+</ul>

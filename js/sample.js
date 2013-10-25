@@ -1,4 +1,4 @@
-define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/mode/javascript/javascript", "ext/mode/htmlmixed/htmlmixed"], function(ko) {
+define(["knockout", "ko2", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/mode/javascript/javascript", "ext/mode/htmlmixed/htmlmixed"], function(ko, ko2) {
     var initEditor;
 
     //display the output of HTML and JavaScript from strings
@@ -9,6 +9,9 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
         update: function(element, valueAccessor) {
             var sample = valueAccessor(),
                 realApply = ko.applyBindings,
+                realApply2 = ko2.applyBindings,
+                getBindingHandler = ko.getBindingHandler,
+                preprocess = ko.bindingProvider.instance.preprocessNode,
                 container = document.createElement("div"),
                 html = sample.html(),
                 js = sample.js();
@@ -21,6 +24,11 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
 
             ko.applyBindings = function(vm, overrideContainer) {
                 realApply(vm, overrideContainer || container);
+            };
+
+
+            ko2.applyBindings = function(vm, overrideContainer) {
+                realApply2(vm, overrideContainer || container);
             };
 
             ko.utils.setHtml(container, html);
@@ -41,10 +49,13 @@ define(["knockout", "codemirror", "ext/mode/css/css", "ext/mode/xml/xml", "ext/m
             }
 
             ko.applyBindings = realApply;
+            ko.getBindingHandler = getBindingHandler;
+            ko.bindingProvider.instance.preprocessNode = preprocess;
+            ko2.applyBindings = realApply2;
         },
 
-        //theme: "rubyblue"
-        theme: "eclipse"
+        theme: "rubyblue"
+        //theme: "eclipse"
     };
 
     //initiailze a CodeMirror editor

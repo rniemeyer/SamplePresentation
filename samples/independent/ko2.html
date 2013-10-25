@@ -1,0 +1,14 @@
+<span data-bind="text: name"></span>
+
+<input type="checkbox" data-bind="checked: showEditor" />
+
+<span data-bind="text: count"></span><hr/>
+
+<div data-bind="visible: showEditor,
+                template: 'editor',
+                blah: count(count() + 1)"></div>
+
+<script id="editor" type="text/html">
+    <input data-bind="value: name" />
+    <div data-bind="text: moment().format('h:mm:ss')"></div>
+</script>
