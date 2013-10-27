@@ -9,7 +9,7 @@ define(["knockout"], function(ko) {
             { title: "options binding generates change event"},
             { title: "miscellaneous peformance enhancements"},
             { title: "build uses Grunt.js (thanks to Larry Gordon)"},
-            { title: "Checkout Michael Best's", link: "knockout-punches", href: "http://mbest.github.io/knockout.punches/" }
+            { title: "Checkout Michael Best's (@m7best)", link: "knockout-punches", href: "http://mbest.github.io/knockout.punches/" }
         ];
 
         this.points = ko.observableArray();
