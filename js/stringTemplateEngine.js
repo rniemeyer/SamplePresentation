@@ -20,7 +20,11 @@ define(["knockout"], function(ko) {
         },
         text: function(value) {
             if (arguments.length === 0) {
-                return templates[this.templateName];
+                var template = templates[this.templateName];
+                if (typeof (template) === 'undefined') {
+                     throw Error("Template not found: " + this.templateName);
+                }
+                return template;
             }
 
             templates[this.templateName] = value;
